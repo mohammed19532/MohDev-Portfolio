@@ -12,6 +12,13 @@ body
     margin: 0;
     padding: 0;
     padding-bottom: 180px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+}
+html, body
+{
+    height: 100%;
 }
 .custom-navbar .nav-link, .custom-navbar
 {
@@ -83,8 +90,10 @@ body
     height: auto;
     border-radius: 50%;
 }
-footer
+.footer
 {
-    margin-top: 60px;
+    margin-top: 80px;
+    padding-top: 80px;
 }
+
 
