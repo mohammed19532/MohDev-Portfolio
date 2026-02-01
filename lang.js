@@ -3,7 +3,7 @@ const languages = {
     navProjects: "Projects",
     navSkills: "Skills",
     navAbout: "About me",
-    ContactBtn: "Contact me",
+    contactBtn: "Contact me",
     heroTitle: "Hello, I am Mohamed",
     heroDev: "Front-End Developer",
     heroDesc: "I am a beginner in Front-End Developing websites using HTML, CSS, JavaScript",
@@ -55,3 +55,4 @@ function setLanguage(lang) {
     document.documentElement.lang = "en";
   }
 }
+
