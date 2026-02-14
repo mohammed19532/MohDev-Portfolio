@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,46 +13,40 @@
     <title>MohDev</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark custom-navbar fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark  bg-dark custom-navbar fixed-top">
         <div class="container-fluid">
-        <div class="brand-lang d-flex align-items-center">
-            <a class="navbar-brand" href="#"><img src="image/mohdev.png" alt="" class="logo"></a>
-            <div class="lang-switch">
-            <button class="btn btn-sm btn-light" onclick="setLanguage('ar')">AR</button>
-            <button class="btn btn-sm btn-light" onclick="setLanguage('en')">EN</button>
-        </div>
-        </div>
+        <a class="navbar-brand py-3" href="#">MOHAMED</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
-           <ul class="navbar-nav ms-auto" id="navLinks">
-                <li class="nav-item"><a class="nav-link active" href="#" id="navProjects">Projects</a></li>
-                <li class="nav-item"><a class="nav-link" href="#" id="navSkills">Skills</a></li>
-                <li class="nav-item"><a class="nav-link" href="#" id="navAbout">About me</a></li>
-                <li class="nav-item"><a class="nav-link" href="#" id="contactBtn">Contact me</a></li>
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Subscriptions</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">About me</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact me</a></li>
             </ul>
         </div>
         </div>
     </nav>
-    <section class="hero"> 
-        <div class="hero-title">
-            <div class="hero-sub">
-                <h1 id="heroTitle"> Hello, Iam <span> Mohamed </span></h1>
-                <h4 class="hero-dev"  id="heroDev">Front-Ends Developer</h4>
-                <p class="hero-p" id="heroDesc">
-                    Iam an a beginner in Front-End Developing websites by using HTML, CSS, JavaScript 
-                </p>
-                <a href="#" class="btn btn-primary"  id="moreBtn">more..</a>
+   <div class="container-fluid section-box px-3 mb-5 pb-5 md-5">
+        <div class="row">
+            <div class="col-lg-10 col-md-11">
+                <div class="p-4 rounded shadow bg-blue text-start border border-light" id="contentBox" style="color: #fff;">
+                    <h1 id="title"><b>Welcome</b></h1>
+                    <h5 id="subtitle">Welcome to my website</h5>
+                    <p id="description"> Hello everybody , my name is Mohamed , and I'm learnning Front-Ends developing , and I have some skills in HTML and CSS and JavaScript , and I'm stil improving myself until I become <b>Full Stack Development</b> </p>
+                    <button type="button" class="btn btn-primary" id="moreBtn">More</button>
+                </div>
             </div>
         </div>
-    </section>
+    </div>
     <section class="skills">
         <h2 class="slil" id="skillsTitle">Skills : </h2>
             <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
-            <div class="card h-100">
-                <img src="image/html.png" class="card-img-top skill-img" alt="...">
+            <div class="cards h-100">
+                <img src="../static/js/image/html.png" class="card-img-top skill-img" alt="...">
             <div class="card-body">
                 <h5 class="card-title">HTML</h5>
                 <p id="htmlDesc">Beginner web developer with basic knowledge of HTML, looking to improve skills.</p>
@@ -62,8 +56,8 @@
             </div>
             </div>
             <div class="col">
-            <div class="card h-100">
-                <img src="image/css2.png" class="card-img-top skill-img" alt="...">
+            <div class="cards h-100">
+                <img src="../static/js/image/css2.png" class="card-img-top skill-img" alt="...">
             <div class="card-body">
                 <h5 class="card-title">CSS</h5>
                 <p id="cssDesc">Beginner web developer with basic knowledge of CSS, looking to improve skills.</p>
@@ -73,8 +67,8 @@
             </div>
             </div>
             <div class="col">
-            <div class="card h-100">
-                <img src="image/JS.png" class="card-img-top skill-img" alt="...">
+            <div class="cards h-100">
+                <img src="../static/js/image/JS.png" class="card-img-top skill-img" alt="...">
             <div class="card-body">
                 <h5 class="card-title">JavaScript</h5>
                 <p id="jsDesc">Beginner web developer with basic knowledge of JavaScript, looking to improve skills.</p>
@@ -85,21 +79,15 @@
             </div>
             </div>
     </section>
-    <footer class="mt-5 text-white text-center">
+   <footer class="mt-5 pt-5 text-white text-center ">
         <div class="container-fluid">
-        <ul class="navbar-nav flex-row justify-content-center">
-        <li class="nav-item">
-          <a class="nav-link mx-3" href="#"><i class="bi bi-instagram"></i></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link  mx-3" href="#"><i class="bi bi-facebook"></i></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link  mx-3" href="#"><i class="bi bi-twitter-x"></i></a>
-        </li>
-        </ul>
-            <p> All rights reserved  &#169; 2026</p>
-      </div>
+            <ul class="list-unstyled d-flex justify-content-center gap-3 mb-2">
+                <li class=""><a class="mx-3 text-white" href=""><i class="bi bi-instagram"></i></a></li>
+                <li class=""><a class="mx-3 text-white" href=""><i class="bi bi-facebook"></i></a></li>
+                <li class=""><a class="mx-3 text-white" href=""><i class="bi bi-envelope"></i></a></li>
+            </ul>
+            <p class="mb-2">All rights reserved  &#169; 2026 </p>
+        </div>
     </footer>
     <script src="bootstrap.bundle.js"></script>
     <script src="lang.js"></script>
@@ -107,6 +95,7 @@
 </body>
 
 </html>
+
 
 
 
